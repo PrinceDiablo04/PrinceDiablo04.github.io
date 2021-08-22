@@ -1,42 +1,34 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Click Me Minigame</title>
-  <meta name="description" content="Website project by Prince.">
-  <meta name="author" content="PrinceDiablo04">
+		<title>Click Me Minigame</title>
+		<meta name="description" content="The button clicking game.">
+		<meta name="author" content="Dyntes">
 
-  <meta property="og:title" content="Click Me Minigame">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="princediablo04.github.io/">
-  <meta property="og:description" content="Website project by Prince">
-  <meta property="og:image" content="image.png">
+		<meta property="og:title" content="Click Me Minigame">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="princediablo04.github.io/">
+		<meta property="og:description" content="The button clicking game.">
+		<meta property="og:image" content="image.jpg">
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+		<link rel="stylesheet" href="css/styles.css?v=1.0">
+		<script type="text/javascript" src="js/game.js"></script>
 
-</head>
+	</head>
 
-<body>
-  <div class="center">
-    <button id="annoying button" onclick="annoyingButtonClicked()">Click Me LOL</button>
-  </div>
-  <script>
-    function annoyingButtonClicked(){
-      let annoyingButton = document.getElementById("annoying button");
-      let xSize = window.innerWidth;
-      let ySize = window.innerHeight;
-      let randomX = Math.floor(Math.random() * xSize)+1;
-      let randomY = Math.floor(Math.random() * ySize)+1;
-      annoyingButton.style.left = "200px";
-      annoyingButton.style.up = randomY;
-    }
-  </script>
-</body>
+	<body>
+		<div class="center">
+			<h1 id="score">Score: </h1>
+			<button id="annoying button" onclick="buttonClicked()">Click Me LOL</button>
+		</div>
+		<script src="js/game.js">
+	</body>
 </html>
