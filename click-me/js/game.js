@@ -1,5 +1,5 @@
 function buttonClicked(){
-	let scoreElement = document.getElementById("Score");
+	let scoreElement = document.getElementById("score");
 	if(document.cookie=""){
 		document.cookie="Score=1";
 		return;
