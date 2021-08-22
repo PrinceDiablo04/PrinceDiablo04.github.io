@@ -1,10 +1,10 @@
 function buttonClicked(){
-	let scoreElement = document.getElementById("score");
+	let scoreElement = document.getElementById("Score");
 	if(document.cookie=""){
-		document.cookie="score=1";
+		document.cookie="Score=1";
 		return;
 	}
-	let score = parseInt(document.cookie.replace('score=', ''))+1;
-	document.cookie = "score="+score;
+	let score = parseInt(document.cookie.replace('Score=', ''))+1;
+	document.cookie = "Score="+score;
 	scoreElement.innerHTML = document.cookie;
 }
